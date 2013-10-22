@@ -2,13 +2,35 @@
 <html>
 <head>
   <title>Mulheremti</title>
+  <link href='http://fonts.googleapis.com/css?family=Open+Sans:600,400,300' rel='stylesheet' type='text/css'>
   <%= stylesheet_link_tag    "application", media: "all"%>
   <%= javascript_include_tag "application" %>
   <%= csrf_meta_tags %>
 </head>
 <body>
 
-<%= yield %>
+<header>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-4">
+        <%= link_to root_path, id: 'logo' do %>
+          <strong>Mulheres</strong>emTI
+        <% end %>
+      </div>
+      <nav class="col-md-8 text-right">
+        <ul>
+          <li> <%= link_to 'Sobre', 'sobre' %> </li>
+          <li> <%= link_to 'Projetos TI por mulheres', 'projetos' %> </li>
+          <li> <%= link_to 'Experimente programar', 'experimente-programar' %> </li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+</header>
+
+<section role="main content">
+  <%= yield %>
+</section>
 
 </body>
 </html>

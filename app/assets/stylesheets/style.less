@@ -1,5 +1,111 @@
 @import 'twitter/bootstrap/mixins';
 
-div {
-  .box-shadow(1px 2px 3px #000);
+.ff {
+  font-family: 'Open Sans', sans-serif;
+}
+
+.ffb {
+  .ff;
+  font-weight: bold;
+}
+
+.profiles {
+  margin: 20px 0 30px;
+}
+
+.profile {
+  margin-bottom: 30px;
+
+  > .details {
+    background-color: #f5f5f5;
+    padding: 10px 20px;
+  }
+  > .img-wrapper {
+    display: block;
+    text-align: center;
+    border: 1px solid #eee;
+
+    &:hover {
+      border: 1px solid #d99;
+    }
+  }
+  img {
+    max-width: 100%;
+    max-height: 250px;
+  }
+}
+
+h4, h3 {
+  margin-top: 5px;
+  .ff;
+  font-weight: 300;
+}
+
+.hover {
+  color: #333;
+  &:hover {
+    color: #d99;
+  }
+}
+
+#logo {
+  .ff;
+  color: #000;
+  font-size: 36px;
+  font-weight: 300;
+}
+
+header {
+  margin: 10px 0 30px;
+}
+
+.date {
+  margin-bottom: 20px;
+}
+
+nav {
+  > ul {
+    list-style: none;
+    margin-top: 10px;
+
+    > li {
+      display: inline-block;
+      margin: 0 10px;
+
+      > a {
+        color: #333;
+        .ff;
+
+        &:hover {
+          color: #333;
+        }
+      }
+    }
+  }
+}
+
+.carousel {
+  background-color: #f5f5f5;
+
+  .content {
+    padding: 40px;
+    font-size: 18px;
+    font-weight: 300;
+    .ff;
+    p {
+      font-size: 15px;
+    }
+    a {
+      font-size: 14px;
+    }
+  }
+  .img {
+    border: 1px solid #eee;
+    background-color: #fff;
+    text-align: center;
+  }
+}
+
+.mb30 {
+  margin-bottom: 30px;
 }

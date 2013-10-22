@@ -1,0 +1,25 @@
+development:
+  host: localhost
+  adapter: postgresql
+  encoding: unicode
+  database: mulheremti_development
+  pool: 5
+  username: postgres
+  password:
+
+test:
+  host: localhost
+  adapter: postgresql
+  encoding: unicode
+  database: mulheremti_test
+  pool: 5
+  username: postgres
+  password:
+
+production:
+  adapter: postgresql
+  encoding: unicode
+  database: mulheremti_production
+  pool: 5
+  username: postgres
+  password:

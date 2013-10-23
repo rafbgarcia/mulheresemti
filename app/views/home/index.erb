@@ -1,64 +1,29 @@
-<section class="container mb30">
-  <div class="carousel">
-    <div class="row">
-      <div class="col-md-8">
-        <div class="content">
-          <strong>Você sabia que o primeiro programador da história foi uma mulher?</strong>
-          <br>
-          <br>
-          <p>
-            Isso mesmo, Ada Augusta Byron King, Condessa de Lovelace, conhecida atualmente como Ada Lovelace, foi a primeira pessoa a escrever um algoritmo para ser processado por uma máquina.
-          </p>
-          <br>
-          <br>
-          <div class="text-right">
-            <%= link_to 'http://pt.wikipedia.org/wiki/Ada_Lovelace', target: '_blank' do %>
-              Saiba mais
-              <i class="glyphicon glyphicon-chevron-right"></i>
-            <% end %>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-4">
-        <div class="img">
-          <%= image_tag '//upload.wikimedia.org/wikipedia/commons/thumb/0/0f/Ada_lovelace.jpg/200px-Ada_lovelace.jpg' %>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
+<%= render 'slideshow' %>
 
 
 <div class="container">
   <h3 class="ffb">Entrevistas</h3>
 
-  <% 10.downto(6) do |i| %>
-    <section class="profiles">
-      <h4 class="date">
-        <%= Date::MONTHNAMES[i] %>
-        2013
-      </h4>
+  <section class="profiles">
+    <h4 class="date"> Outubro de 2013 </h4>
 
-      <div class="row">
-        <% 3.times do %>
-          <section class="profile col-md-4">
-            <%= link_to '', class: 'img-wrapper' do %>
-              <%= image_tag 'lilian.jpg' %>
-            <% end %>
-            <div class="details">
-              <h3>
-                <%= link_to '', class: 'hover' do %>
-                  Lilian De Munno
-                <% end %>
-              </h3>
-              <p>
-                Analista de negócios,
-                ThoughtWorks
-              </p>
-            </div>
-          </section>
+    <div class="row">
+      <section class="profile col-md-4">
+        <%= link_to lilians_interview_path, class: 'img-wrapper' do %>
+          <%= image_tag 'lilian.jpg' %>
         <% end %>
-      </div>
-    </section>
-  <% end %>
+        <div class="details">
+          <h3>
+            <%= link_to lilians_interview_path, class: 'hover' do %>
+              Lilian De Munno
+            <% end %>
+          </h3>
+          <p>
+            Analista de negócios na
+            ThoughtWorks
+          </p>
+        </div>
+      </section>
+    </div>
+  </section>
 </div>

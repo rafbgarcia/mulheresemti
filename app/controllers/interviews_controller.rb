@@ -1,8 +1,7 @@
 class InterviewsController < ApplicationController
 
   def show
-    person = params[:person]
-    render person
+    render params[:person]
   end
 
 end

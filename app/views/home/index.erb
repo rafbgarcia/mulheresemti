@@ -4,26 +4,5 @@
 <div class="container">
   <h3 class="ffb">Entrevistas</h3>
 
-  <section class="profiles">
-    <h4 class="date">Outubro de 2013</h4>
-
-    <div class="row">
-      <section class="profile col-md-4">
-        <%= link_to interview_path('bethlem-migot'), class: 'img-wrapper' do %>
-          <%= image_tag 'bethlem-migot.jpg' %>
-        <% end %>
-        <div class="details">
-          <h3>
-            <%= link_to interview_path('bethlem-migot'), class: 'hover' do %>
-              Bethlem Migot
-            <% end %>
-          </h3>
-          <p>
-            Analista de Negócios na
-            ThoughtWorks
-          </p>
-        </div>
-      </section>
-    </div>
-  </section>
+  <%= render 'october_2013' %>
 </div>

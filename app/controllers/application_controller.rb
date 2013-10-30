@@ -7,4 +7,7 @@ class ApplicationController < ActionController::Base
   def about
   end
 
+  def coming_soon
+  end
+
 end

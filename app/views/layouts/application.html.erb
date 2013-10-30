@@ -20,16 +20,16 @@
       <nav class="col-md-8 text-right">
         <ul>
           <li> <%= link_to 'Sobre', about_path %> </li>
-          <li> <%= link_to 'Novidades', 'novidades' %> </li>
-          <li> <%= link_to 'Projetos TI por mulheres', 'projetos' %> </li>
-          <li> <%= link_to 'Experimente programar', 'experimente-programar' %> </li>
+          <li> <%= link_to 'Novidades', coming_soon_path %> </li>
+          <li> <%= link_to 'Projetos TI por mulheres', coming_soon_path %> </li>
+          <li> <%= link_to 'Experimente programar', coming_soon_path %> </li>
         </ul>
       </nav>
     </div>
   </div>
 </header>
 
-<section role="main content">
+<section role="main content" id="main-content">
   <%= yield %>
 </section>
 

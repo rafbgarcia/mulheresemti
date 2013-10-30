@@ -1,6 +1,8 @@
 class InterviewsController < ApplicationController
 
-  def lilians
+  def show
+    person = params[:person]
+    render person
   end
 
 end

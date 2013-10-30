@@ -5,21 +5,21 @@
   <h3 class="ffb">Entrevistas</h3>
 
   <section class="profiles">
-    <h4 class="date"> Outubro de 2013 </h4>
+    <h4 class="date">Outubro de 2013</h4>
 
     <div class="row">
       <section class="profile col-md-4">
-        <%= link_to lilians_interview_path, class: 'img-wrapper' do %>
-          <%= image_tag 'lilian.jpg' %>
+        <%= link_to interview_path('bethlem-migot'), class: 'img-wrapper' do %>
+          <%= image_tag 'bethlem-migot.jpg' %>
         <% end %>
         <div class="details">
           <h3>
-            <%= link_to lilians_interview_path, class: 'hover' do %>
-              Lilian De Munno
+            <%= link_to interview_path('bethlem-migot'), class: 'hover' do %>
+              Bethlem Migot
             <% end %>
           </h3>
           <p>
-            Analista de negócios na
+            Analista de Negócios na
             ThoughtWorks
           </p>
         </div>
